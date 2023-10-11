@@ -42,7 +42,7 @@ After=network.target
 [Service]
 Type=simple
 User=root
-ExecStart=/usr/bin/node $INSTALL_DIR/main.js
+ExecStart=/usr/local/bump-cycler/start.sh
 Restart=on-failure
 
 [Install]
