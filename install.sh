@@ -20,7 +20,7 @@ if [ -d $INSTALL_DIR ]; then
     echo "Removing old installation..."
     sudo rm -rf $INSTALL_DIR
 fi
-mkdir INSTALL_DIR
+mkdir $INSTALL_DIR
 sudo cp -r ./main.ts $INSTALL_DIR
 sudo cp -r ./package.json $INSTALL_DIR
 sudo cp -r ./tsconfig.json $INSTALL_DIR
