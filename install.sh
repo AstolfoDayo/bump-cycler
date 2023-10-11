@@ -15,7 +15,7 @@ then
 fi
 
 # Place the files in the correct locations
-INSTALL_DIR="/usr/local/bump-cycler"
+INSTALL_DIR="/usr/local/bump-cycler/"
 if [ -d $INSTALL_DIR ]; then
     echo "Removing old installation..."
     sudo rm -rf $INSTALL_DIR
