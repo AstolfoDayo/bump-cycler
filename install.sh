@@ -7,6 +7,12 @@ then
     apt install -y sudo
 fi
 
+if ! command -v curl &> /dev/null
+then
+    echo "curl could not be found. Installing..."
+    sudo apt install -y curl
+fi
+
 if ! command -v npm &> /dev/null
 then
     echo "node could not be found. Installing..."
