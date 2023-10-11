@@ -21,10 +21,10 @@ if [ -d $INSTALL_DIR ]; then
     sudo rm -rf $INSTALL_DIR
 fi
 mkdir $INSTALL_DIR
-sudo cp -r ./main.ts $INSTALL_DIR
-sudo cp -r ./package.json $INSTALL_DIR
-sudo cp -r ./tsconfig.json $INSTALL_DIR
-sudo cp -r ./.env $INSTALL_DIR
+sudo cp ./main.ts $INSTALL_DIR
+sudo cp ./package.json $INSTALL_DIR
+sudo cp ./tsconfig.json $INSTALL_DIR
+sudo cp ./.env $INSTALL_DIR
 
 # Make the service
 SERVICE_FILE="/etc/systemd/system/bump-cycler.service"
