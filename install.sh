@@ -7,7 +7,7 @@ then
     apt install -y sudo
 fi
 
-if ! command -v node &> /dev/null
+if ! command -v npm &> /dev/null
 then
     echo "node could not be found. Installing..."
     curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo bash -
@@ -25,6 +25,11 @@ sudo cp main.ts $INSTALL_DIR
 sudo cp package.json $INSTALL_DIR
 sudo cp tsconfig.json $INSTALL_DIR
 sudo cp .env $INSTALL_DIR
+sudo cp start.sh $INSTALL_DIR
+
+# Install the dependencies
+cd $INSTALL_DIR
+npm install
 
 # Make the service
 SERVICE_FILE="/etc/systemd/system/bump-cycler.service"
