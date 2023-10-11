@@ -33,6 +33,8 @@ sudo cp tsconfig.json $INSTALL_DIR
 sudo cp .env $INSTALL_DIR
 sudo cp start.sh $INSTALL_DIR
 
+chmod +x $INSTALL_DIR/start.sh
+
 # Install the dependencies
 cd $INSTALL_DIR
 npm install
